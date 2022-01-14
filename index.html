@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title>Inayatul latifa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("a.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">PROFIL</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">BERANDA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">TENTANG</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">TEKNIK INFORMATIKA</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">INAYATUL<br>LATIFA</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">CILACAP, 13 JAN 2022</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">BERANDA SAYA</span></h5>
+    <p>Saya adalah seorang mahasiswa unugha semester 3</p>
+    <p>pengalaman saya di bidang teknik informatika, saya juga mempunyai ahli di bidang pemrogaman, dan juga mengkses beberapa aplikasi yang ada.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Begitu juga saya sudah banyak menjuari beberapa kompetisi menjadi seorang progammer.</i></p>
+      <p>walaupun saya sudah banyak prestasi saya juga masih butuh pembelajaran yang harus saya pelajari selanjutnya.</p>
+    </div>
+    <img src="c.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Yang harus di pelajari:</strong></p>
+    <p><strong></strong></p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">BUKU BELAJAR</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">BUKU</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">WAKTU BELAJAR</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>PEMROGAMAN</h5>
+      <p class="w3-text-grey">mengoding sebuah website pribadi</p><br>
+    
+      <h5>BAHASA INGGRIS</h5>
+      <p class="w3-text-grey">membuat sebuah makalah tentang kehidupan sehari-hari</p><br>
+    
+      <h5>ETIKA AL-GHAZALI</h5>
+      <p class="w3-text-grey">mencari tentang artikel pengalaman imam ghazali menyebarkan agama islam</p><br>
+    
+      <h5>KONSEP PERANGKAT KERAS</h5>
+      <p class="w3-text-grey">mencoba mempraktekan tentang cara kerja sistem perangkat keras dengan menggunakan arduino</p><br>
+    
+      <h5>JARINGAN KOMPUTER</h5>
+      <p class="w3-text-grey">merancang sebuah jaringan dalam sistem ip.addres</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>SENIN</h5>
+      <p class="w3-text-grey">19.00-21.00</p><br>
+    
+      <h5>SELASA</h5>
+      <p class="w3-text-grey">11.00-14.00</p><br>
+    
+      <h5>RABU</h5>
+      <p class="w3-text-grey">07.30-09.30</p><br>
+    
+      <h5>KAMIS</h5>
+      <p class="w3-text-grey">10.00-12.30</p><br>
+    
+      <h5>JUM'AT</h5>
+      <p class="w3-text-grey">07.00-08.00</p>
+    </div>  
+    <img src="d.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">UNIVERSITAS NAHDLATUL ULAMA AL-GHAZALI</span></h5>
+    <p></p>
+    <img src="b.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">KAMPUS SAYA</span> UNUGHA adalah sebuah kampus yang menciptakan orang-orang yang berguna bagi nusa dan bangsa.</p>
+    <p><strong>Saran & pesan:</strong></p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="alamat" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="NIM" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="PESAN" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">Kirim pesan</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Dibuat oleh <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Inayatul latifa</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
